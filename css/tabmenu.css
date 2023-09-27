@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing: border-box;}
+a {text-decoration: none;}
+
+
+ .tab {background-color:#ffe512; width: 100%;
+display: flex; justify-content: space-around; padding: 1rem 0;}
+.tab span {color: #000; font-weight: bold;}
+.tab li {margin: 0 auto;}
+.tab li a {font-weight: bold; color: #fff;}
+.tab li a.selected {color: #000; cursor:default;}
+
+.tab_menu {width: 100%; display: flex; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 3rem;}
+.tab_menu li {width: 50%; padding: 20px 20px;}
+
+.tab_menu li img {width: 100%;}
+
+.tab_menu li a {text-align: center; color:#000; position: relative;}
+.tab_menu li a:before {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 10; background-color: #ffe512
+  ;content: ""; opacity: 0; transition: all 0.2s;}
+
+.tab_menu li a:hover::before {opacity: 0.9;}
+
+.wrap {position: absolute; left: 50%; top: 50%; top: 50%; z-index: 20; opacity: 0;}   
+
+.title {border: #000; margin-top:3%; margin-left:3%}
+.wrap span.txt {font-size: 2rem; line-height : 1.8rem; font-family: Sedgwick Ave Display;}
+.tab_menu li a:hover .wrap {transform: translate(-50%, -50%); opacity: 1;}
+.wrap .txt {color: #fff;font-size: 0.9rem; line-height: 25px; font-weight: normal;}
+
+.tab_menu span {display: block; padding-top: 10px; font-size: 0.8rem;}
+.name {display:inline-block; padding-top: 30px; font-size: 1.1rem!important; font-weight: 800; padding-bottom: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+
+
+
+
+
+
