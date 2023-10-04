@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+.pop_wrap {
+  position: absolute; left: 100px;
+  top: 100px;
+  display: none;
+
+}
